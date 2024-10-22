@@ -3,35 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Controle</title>
+    <title>Controle WEG Home</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="Logo" class="logo">
-    </header>
-    <main>
-        <div class="center">
-            <div class="switch-container">
-                <label class="switch">
-                    <input type="checkbox" id="switch1">
-                    <span class="slider"></span>
-                </label>
-                <p>Palco F</p>
-            </div>
-            <div class="switch-container">
-                <label class="switch">
-                    <input type="checkbox" id="switch2">
-                    <span class="slider"></span>
-                </label>
-                <p>Palco</p>
-            </div>
+    <div class="container">
+        <header>
+            <h1>Controle WEG Home</h1>
+            <img src="sua_logo.png" alt="Logo" class="logo"> <!-- Substitua pelo caminho da sua logo -->
+        </header>
+        
+        <div class="switches">
+            <label class="switch">
+                <input type="checkbox" id="switch1">
+                <span class="slider"></span>
+            </label>
+            <label for="switch1">Interruptor 1</label>
+
+            <label class="switch">
+                <input type="checkbox" id="switch2">
+                <span class="slider"></span>
+            </label>
+            <label for="switch2">Interruptor 2</label>
         </div>
-        <div class="bottom-buttons">
-            <button id="btn-ligar-todos" class="btn-all-on">Ligar Tudo</button>
-            <button id="btn-desligar-todos" class="btn-all-off">Desligar Tudo</button>
-        </div>
-    </main>
-    <script src="script/scripts.js"></script>
+
+        <button id="turnOnAll">Ligar Todos</button>
+        <button id="turnOffAll">Desligar Todos</button>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
